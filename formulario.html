@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+            <title>Formulario de encuesta estudiantil UTP</title>
+    </head>
+    <body>
+        <form align="center" action="#" method="GET">
+            <h4 style="margin-bottom: 0.5%;">Encuesta estudiantil Universidad Tecnológica Centro de Bocas Del Toro</h4>
+            <table border="2" align="center" style="text-align: center; width: 32%;" cellpadding="3" rules="rows">
+                <tr>
+                    <td align="left">Nombre:</td><td align="right"><input type="text" name="Nombre" placeholder="ingrese su nombre" size="30"></td>          
+                </tr>
+                <tr>
+                    <td align="left">Apellido:</td><td align="right"><input type="text" name="Apellido" placeholder="ingrese su apellido" size="30"></td>
+                </tr>
+                <tr>
+                    <td align="left">Email:</td><td align="right"><input type="text" name="Email" placeholder="ingrese su email" size="30"></td>
+                </tr>
+                <tr>
+                    <td align="left">Lenguajes que más les gusten:</td>
+                    <td align="left"><label><input type="checkbox" name="lenguaje[]" id="java" value="Java">Java</label></br>
+                    <label><input type="checkbox" name="lenguaje[]" id="php" value="PHP">PHP</label></br>   
+                    <label><input type="checkbox" name="lenguaje[]" id="C#" value="C#">C#</label></br>
+                    <label><input type="checkbox" name="lenguaje[]" id="python" value="Python">Python</label></br>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">Seleccione su facultad:</td><td align="right"><label for="lang">Facultad:</label>
+                        <select name="facultad" id="Facultad">
+                            <option value="Ingieneria en Sistemas">Ingeniería en Sistemas</option>
+                            <option value="Ingieneria Civil">Ingeniería Civil</option>
+                            <option value="Ingieneria Industrial">Ingeniería Industrial</option>
+                            <option value="Ingieneria Electrica">Ingeniería Eléctrica</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td align="left">Seleccione sexo:</td>
+                    <td align="left"><label><input type="radio" name="sexo" id="M" value="M">Masculino</label><br>
+                    <td align="left"><label><input type="radio" name="sexo" id="F" value="F">Femenino</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">Observación:</td><td align="right" ><textarea style="margin:0%;" name="observacion" placeholder="ingrese alguna observación" rows="8" cols="40"></textarea></td>
+                </tr>
+                <!-- <tr>
+                    <td align="left"><input type="submit" value="Enviar encuesta"/></td>
+                    <td align="right"><input type="reset" value="Borrar los datos" /></td>
+                </tr>-->
+            </table>
+            <div style="margin-top: 0.5%;">
+                <input type="submit" value="Enviar encuesta"/>&nbsp&nbsp
+                <input type="reset" value="Borrar los datos"/>
+            </div>
+        </form>
+    </body>
+</html>
